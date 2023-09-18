@@ -1,0 +1,163 @@
+
+<html>
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/lib/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+p {
+    font-family: "Times New Roman", Times, serif;
+}
+   
+.mySlides {display:none;}
+
+
+ *{
+
+  box-sizing: border-box;
+}
+/* Style the submit button */
+form.example button {   
+  position: absolute; 
+  right: 5px; 
+  width: 3%;
+  padding: 10px;
+  background: #f33d21;
+  color: white;
+  font-size: 20px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #ffe23b;
+}
+form.example input[type=text] {
+  position: absolute; 
+  right: 0px; 
+  padding: 5px;
+  font-size: 20px;
+  border: 1px solid rgb(255, 70, 70);
+  width: 20%;
+  background: #f9efef;
+}
+h1 {
+  font-size: 40px;
+}
+
+ </style>
+</head>
+
+<body id="myPage"></body>
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+  <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>Logo</b></a>
+<!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The form -->
+<form class="example" action="action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"> </i></button>
+</form>
+</div>
+<div class="w3-main" style="margin-left:100px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" id="showcase">
+    
+    <h1><b>Superstar-Check in Thailand</b></h1>
+  </div>
+  
+  <div class="w3-row-padding w3-padding-16">
+  <div class="w3-third">
+  <div class="w3-content w3-section">
+  <img class="mySlides" src="imgHome/lisa.png">
+  <img class="mySlides" src="imgHome/แบมแบม.jpg">
+  <img class="mySlides" src="imgHome/ไอยู.jpg">
+  <img class="mySlides" src="imgHome/มินนี่.jpg">
+</div>
+      <div class="w3-container">
+        <h3>South Korea</h3>
+  
+    </div>
+    </div>
+    <div class="w3-third">
+      <div class="w3-content w3-section" >
+        
+        <img class="mySlides" src="imgHome/แจ็ค1.jpg">
+        <img class="mySlides" src="imgHome/กงจวิ้น.jpg">
+        <img class="mySlides" src="imgHome/หยางหยาง.jpg">
+        <img class="mySlides" src="imgHome/เฉิงเซียว.jpg">
+      </div>
+        <div class="w3-container">
+          <h3>China</h3>
+         
+         </div>
+      </div>
+      <div class="w3-third">
+        <div class="w3-content w3-section" >
+        
+          <img class="mySlides" src="imgHome/ดิว.jpg">
+          <img class="mySlides" src="imgHome/ไบร์ท.jpg">
+          <img class="mySlides" src="imgHome/อ๊อฟ.jpg">
+          <img class="mySlides" src="imgHome/วิน.jpg">
+        </div>  
+        <div class="w3-container">
+          <h3>Thailand</h3>
+        </div>
+      </div>
+      </div>
+      </div>
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+  <h2>SUPERSTAR</h2>
+  <p>Superstar Recommended:</p>
+  
+  <div class="w3-row"><br>
+  <div class="w3-quarter">
+    <img src="/imgHome/lisa.png" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+    <h3>Lisa Black-Pink</h3>
+    <p>Artist:South Korea</p>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="/imgHome/ชาอึนอู.webp" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Cha Eun-woo</h3>
+    <p>Superstar:South Korea</p>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="/imgHome/แจ็ค1.jpg" alt="Boss" style="width:30%" class="w3-circle w3-hover-opacity">
+    <h3>Jackson Wang</h3>
+    <p>Artist:China</p>
+  </div>
+  <div class="w3-quarter">
+    <img src="/imgHome/ดิว.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Diw</h3>
+    <p>Superstar:Thailand</p>
+  </div>
+  </div>
+  </div>
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>  
+</body>
+</html>
