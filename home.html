@@ -12,13 +12,9 @@
 p {
     font-family: "Times New Roman", Times, serif;
 }
-   
 .mySlides {display:none;}
-
-
- *{
-
-  box-sizing: border-box;
+*{
+box-sizing: border-box;
 }
 /* Style the submit button */
 form.example button {   
@@ -41,15 +37,36 @@ form.example input[type=text] {
   right: 0px; 
   padding: 5px;
   font-size: 20px;
-  border: 1px solid rgb(255, 70, 70);
+  border: 1px solid rgb(12, 12, 12);
   width: 20%;
   background: #f9efef;
 }
 h1 {
   font-size: 40px;
 }
+.button {
+  display: inline-block;
+  padding: 10px 169px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ff5f37;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
 
- </style>
+.button:hover {background-color: #dfc93f}
+
+.button:active {
+  background-color: #eed63b;
+  box-shadow: 0 9px #666;
+  transform: translateY(4px);
+}
+</style>
 </head>
 
 <body id="myPage"></body>
@@ -69,11 +86,10 @@ h1 {
 
   <!-- Header -->
   <div class="w3-container" id="showcase">
-    
     <h1><b>Superstar-Check in Thailand</b></h1>
   </div>
-  
-  <div class="w3-row-padding w3-padding-16">
+  <div class="w3-row-padding w3-padding-16"></div>
+
   <div class="w3-third">
   <div class="w3-content w3-section">
   <img class="mySlides" src="imgHome/lisa.png">
@@ -81,24 +97,26 @@ h1 {
   <img class="mySlides" src="imgHome/ไอยู.jpg">
   <img class="mySlides" src="imgHome/มินนี่.jpg">
 </div>
-      <div class="w3-container">
-        <h3>South Korea</h3>
-  
+<a href="les'go1.html">
+  <div class="w3-third w3-margin-bottom"></div>
+  <p class="w3-center"> 
+    <button class="button">South Korea</button></a>
     </div>
-    </div>
+
     <div class="w3-third">
       <div class="w3-content w3-section" >
-        
         <img class="mySlides" src="imgHome/แจ็ค1.jpg">
         <img class="mySlides" src="imgHome/กงจวิ้น.jpg">
         <img class="mySlides" src="imgHome/หยางหยาง.jpg">
         <img class="mySlides" src="imgHome/เฉิงเซียว.jpg">
       </div>
-        <div class="w3-container">
-          <h3>China</h3>
-         
-         </div>
+
+      <a href="les'go2.html">
+    <div class="w3-third w3-margin-bottom"></div>
+  <p class="w3-center"> 
+    <button class="button">China</button></a>
       </div>
+
       <div class="w3-third">
         <div class="w3-content w3-section" >
         
@@ -107,12 +125,13 @@ h1 {
           <img class="mySlides" src="imgHome/อ๊อฟ.jpg">
           <img class="mySlides" src="imgHome/วิน.jpg">
         </div>  
-        <div class="w3-container">
-          <h3>Thailand</h3>
-        </div>
+        <a href="les'go3.html">
+        <div class="w3-third w3-margin-bottom"></div>
+        <p class="w3-center"> 
+          <button class="button">Thailand</button></a>
       </div>
-      </div>
-      </div>
+    </div>
+  </div>
 <!-- Team Container -->
 <div class="w3-container w3-padding-64 w3-center" id="team">
   <h2>SUPERSTAR</h2>
@@ -120,23 +139,27 @@ h1 {
   
   <div class="w3-row"><br>
   <div class="w3-quarter">
+    <a href="kp/kp1.html">
     <img src="/imgHome/lisa.png" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
     <h3>Lisa Black-Pink</h3>
     <p>Artist:South Korea</p>
   </div>
   
   <div class="w3-quarter">
+    <a href="kp/kp2.html">
     <img src="/imgHome/ชาอึนอู.webp" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
     <h3>Cha Eun-woo</h3>
     <p>Superstar:South Korea</p>
   </div>
   
   <div class="w3-quarter">
+    <a href="kp/kp3.html">
     <img src="/imgHome/แจ็ค1.jpg" alt="Boss" style="width:30%" class="w3-circle w3-hover-opacity">
     <h3>Jackson Wang</h3>
     <p>Artist:China</p>
   </div>
   <div class="w3-quarter">
+    <a href="th/th1.html">
     <img src="/imgHome/ดิว.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
     <h3>Diw</h3>
     <p>Superstar:Thailand</p>
