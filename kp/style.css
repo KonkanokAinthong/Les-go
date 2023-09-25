@@ -76,17 +76,18 @@ header {
     z-index: 11111;
 }
 .item .name{
-    color:#ff24b2;
+    color:#e4dbdb;
     font-size: 40px;
     font-weight: bold;
     opacity: 0;
     animation:showcontent 1s ease-in-out 1 forwards
 }
 .item .des{
-    color:#eef831;
+    color:#efeae4;
+    background: #f5ba9b;
     font-size: 25px;
     margin:20px 0;
-    opacity: 0;
+    opacity: 100;
     animation:showcontent 1s ease-in-out 0.3s 1 forwards
 }
 *{
@@ -162,11 +163,12 @@ header {
     width:100%;
 }
 .buttons button{
+    background-color: #ff4709;
     width:50px;
     height:50px;
     border-radius: 50%;
     border:1px solid #010101;
     transition: 0.5s;
 }.buttons button:hover{
-    background-color: #ff4709;
+    background-color: #ff7f55;
 }
