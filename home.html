@@ -9,8 +9,28 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+
+
+header {
+  background-color: rgb(253, 80, 6);
+}
+main {
+  background-image: linear-gradient(45deg, rgba(255, 106, 26, 1) 17%, rgba(26, 16, 10, 1) 100%);
+}
+h1 {
+  color: white;
+}
+h2 {
+  background-color: rgb(248, 199, 170);
+ font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+h3 {
+  color: white;
+}
 p {
     font-family: "Times New Roman", Times, serif;
+    color: white;
 }
 .mySlides {display:none;}
 *{
@@ -22,7 +42,7 @@ form.example button {
   right: 5px; 
   width: 3%;
   padding: 10px;
-  background: #f33d21;
+  background: #ff2b0a;
   color: white;
   font-size: 20px;
   border: 1px solid grey;
@@ -30,7 +50,7 @@ form.example button {
 }
 
 form.example button:hover {
-  background: #ffe23b;
+  background: #ff5f37;
 }
 form.example input[type=text] {
   position: absolute; 
@@ -53,26 +73,26 @@ h1 {
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #ff5f37;
+  background-color: #ff430f;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
 
-.button:hover {background-color: #dfc93f}
+.button:hover {background-color: #ff7336}
 
 .button:active {
-  background-color: #eed63b;
+  background-color: #ff5f37;
   box-shadow: 0 9px #666;
   transform: translateY(4px);
 }
 </style>
 </head>
-
-<body id="myPage"></body>
+<body>
+<header>
 <!-- Navigation Bar -->
-<div class="w3-bar w3-white w3-border-bottom w3-xlarge">
-  <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>Logo</b></a>
+<p1 class="w3-bar w3-white w3-border-bottom w3-xlarge">
+  <a href="home.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>Logo</b></a>
 <!-- Load icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -81,8 +101,8 @@ h1 {
   <input type="text" placeholder="Search.." name="search">
   <button type="submit"><i class="fa fa-search"> </i></button>
 </form>
-</div>
-<div class="w3-main" style="margin-left:100px;margin-right:40px">
+</header>
+<main>
 
   <!-- Header -->
   <div class="w3-container" id="showcase">
@@ -92,95 +112,73 @@ h1 {
 
   <div class="w3-third">
   <div class="w3-content w3-section">
-  <img class="mySlides" src="imgHome/lisa.png">
-  <img class="mySlides" src="imgHome/ชาอึนอู.png">
-  <img class="mySlides" src="imgHome/ไอยู.jpg">
-  <img class="mySlides" src="imgHome/มินนี่.jpg">
-</div>
+  <img  src="imgHome/lisa.png">
+ </div>
 <a href="les'go1.html">
   <div class="w3-third w3-margin-bottom"></div>
-  <p class="w3-center"> 
+  <p1 class="w3-center"> 
     <button class="button">South Korea</button></a>
     </div>
-
     <div class="w3-third">
       <div class="w3-content w3-section" >
-        <img class="mySlides" src="imgHome/แจ็ค1.jpg">
-        <img class="mySlides" src="imgHome/กงจวิ้น.jpg">
-        <img class="mySlides" src="imgHome/หยางหยาง.jpg">
-        <img class="mySlides" src="imgHome/เฉิงเซียว.jpg">
-      </div>
-
-      <a href="les'go2.html">
-    <div class="w3-third w3-margin-bottom"></div>
-  <p class="w3-center"> 
-    <button class="button">China</button></a>
-      </div>
+        <img src="imgHome/หยางหยาง.jpg">
+      </div>  
+      <a href="les'go3.html">
+      <div class="w3-third w3-margin-bottom"></div>
+      <p1 class="w3-center"> 
+        <button class="button">Chi Na</button></a>
+    </div>
+   
 
       <div class="w3-third">
         <div class="w3-content w3-section" >
-        
-          <img class="mySlides" src="imgHome/ดิว.jpg">
-          <img class="mySlides" src="imgHome/ไบร์ท.jpg">
-          <img class="mySlides" src="imgHome/อ๊อฟ.jpg">
-          <img class="mySlides" src="imgHome/วิน.jpg">
+          <img src="imgHome/วิน.jpg">
         </div>  
         <a href="les'go3.html">
         <div class="w3-third w3-margin-bottom"></div>
-        <p class="w3-center"> 
-          <button class="button">Thailand</button></a>
+        <p1 class="w3-center"> 
+          <button class="button">Thai Land</button></a>
       </div>
     </div>
-  </div>
+  <main>
 <!-- Team Container -->
-<div class="w3-container w3-padding-64 w3-center" id="team">
-  <h2>SUPERSTAR</h2>
-  <p>Superstar Recommended:</p>
-  
-  <div class="w3-row"><br>
-  <div class="w3-quarter">
-    <a href="kp/kp1.html">
-    <img src="/imgHome/lisa.png" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
-    <h3>Lisa Black-Pink</h3>
-    <p>Artist:South Korea</p>
-  </div>
-  
-  <div class="w3-quarter">
-    <a href="kp/kp1.html">
-    <img src="/imgHome/ชาอึนอู.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-    <h3>Cha Eun-woo</h3>
-    <p>Superstar:South Korea</p>
-  </div>
-  
-  <div class="w3-quarter">
-    <a href="kp/kp1.html">
-    <img src="/imgHome/แจ็ค1.jpg" alt="Boss" style="width:30%" class="w3-circle w3-hover-opacity">
-    <h3>Jackson Wang</h3>
-    <p>Artist:China</p>
-  </div>
-  <div class="w3-quarter">
-    <a href="kp/kp1.html">
-    <img src="/imgHome/ดิว.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-    <h3>Diw</h3>
-    <p>Superstar:Thailand</p>
-  </div>
-  </div>
-  </div>
-  <script>
-    var myIndex = 0;
-    carousel();
+<footer>
+  <div class="w3-container w3-padding-64 w3-center" id="team">
+    <h2>SUPERSTAR</h2>
+    <p>Superstar Recommended:</p>
     
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-           x[i].style.display = "none";  
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}    
-        x[myIndex-1].style.display = "block";  
-        setTimeout(carousel, 2000); // Change image every 2 seconds
-    }
-    </script>  
+    <div class="w3-row"><br>
+    <div class="w3-quarter">
+      <a href="kp/kp1.html">
+      <img src="/imgHome/lisa.png" alt="Boss" style="width:37%" class="w3-circle w3-hover-opacity">
+      <h3>Lisa Black-Pink</h3>
+      <p>Artist:South Korea</p>
+    </div>
+    
+    <div class="w3-quarter">
+      <a href="kp/kp1.html">
+      <img src="/imgHome/ชาอึนอู.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+      <h3>Cha Eun-woo</h3>
+      <p>Superstar:South Korea</p>
+    </div>
+    
+    <div class="w3-quarter">
+      <a href="kp/kp1.html">
+      <img src="/imgHome/แจ็ค1.jpg" alt="Boss" style="width:32%" class="w3-circle w3-hover-opacity">
+      <h3>Jackson Wang</h3>
+      <p>Artist:China</p>
+    </div>
+    <div class="w3-quarter">
+      <a href="kp/kp1.html">
+      <img src="/imgHome/ดิว.jpg" alt="Boss" style="width:47%" class="w3-circle w3-hover-opacity">
+      <h3>Diw</h3>
+      <p>Superstar:Thailand</p>
+    </div>
+    </div>
+    </div>
+</footer>
+
+</body>
+ 
 </body>
 </html>
