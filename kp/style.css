@@ -1,6 +1,9 @@
 body{
-    background-color: #eaeaea;
-    overflow: hidden;
+   
+    
+        background-image: linear-gradient(45deg, rgba(255, 106, 26, 1) 17%, rgba(26, 16, 10, 1) 100%);
+
+  
 }
 .container{
     position: absolute;
@@ -10,26 +13,26 @@ body{
     width:1400px;
     height:700px;
     padding:30px;
-    background-color: #f5f5f5;
-    box-shadow: 0 30px 50px #dbdbdb;
+   
+    box-shadow: 0 30px 50px #fd9b33;
 }
 #slide{
     width:max-content;
     margin-top:50px;
 }
 .item{
-    width:200px;
-    height:300px;
+    width:150px;
+    height:200px;
     background-position: 20% 20%;
     display: inline-block;
     transition: 0.5s;
     background-size: cover;
     position: absolute;
     z-index: 1;
-    top:50%;
+    top:90%;
     transform: translate(0,-50%);
-    border-radius: 20px;
-    box-shadow:  0 30px 50px #505050;
+    border-radius: 30px;
+    box-shadow:  0 10px 20px #ff4141;
 }
 .item:nth-child(1),
 .item:nth-child(2){
@@ -42,16 +45,16 @@ body{
     box-shadow: none;
 }
 .item:nth-child(3){
-    left:50%;
+    left:70%;
 }
 .item:nth-child(4){
-    left:calc(50% + 220px);
+    left:calc(70% + 220px);
 }
 .item:nth-child(5){
-    left:calc(50% + 440px);
+    left:calc(70% + 440px);
 }
 .item:nth-child(n+6){
-    left:calc(50% + 660px);
+    left:calc(70% + 660px);
     opacity: 0;
 }
 .item .content{
@@ -128,7 +131,7 @@ body{
     }to{
         opacity: 1;
         transform: translate(0,0);
-        filter:blur(0);
+        filter:blur(0px);
     }
 }
 .buttons{
