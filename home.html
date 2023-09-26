@@ -14,8 +14,15 @@
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-
-
+p2{
+  position: absolute;  
+  top: 0px;
+  
+}
+p{
+  font-family: "Times New Roman", Times, serif;
+    color: white;
+}
 header {
   background-color: rgb(253, 80, 6);
 }
@@ -26,16 +33,13 @@ h1 {
   color: white;
 }
 h3 {
+  background: #efe9e7;
   color: white;
 }
 h2 {
   background-color: rgb(248, 199, 170);
  font-family: "Times New Roman", Times, serif;
   color: white;
-}
-p {
-    font-family: "Times New Roman", Times, serif;
-    color: white;
 }
 *{
 box-sizing: border-box;
@@ -92,12 +96,98 @@ h1 {
   box-shadow: 0 9px #666;
   transform: translateY(4px);
 }
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #efedf6 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 30px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.waviy0 {
+  position: relative;
+  border: 0px solid;
+  top: 20px;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 40px;
+}
+.waviy0 span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  border: 0px solid;
+  top: 30px;
+  display: inline-block;
+  color: #fff7f7;
+ 
+  animation: waviy0 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy0 {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+.waviy1 {
+  position: relative;
+  border: 0px solid;
+  top: 30px;
+  font-size: 20px;
+}
+.waviy1 span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  border: 0px solid;
+  top: 30px;
+ 
+  color: #fff7f7;
+  
+}
+
+
 </style>
 </head>
 <body>
 <header>
 <!-- Navigation Bar -->
-<p1 class="w3-bar w3-white w3-border-bottom w3-xlarge">
+<p2 class="w3-bar w3-white w3-border-bottom w3-xlarge">
   <a href="home.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>Logo</b></a>
 <!-- Load icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -110,13 +200,42 @@ h1 {
 </header>
 <main>
 
-  <!-- Header -->
-  <div class="w3-container" id="showcase">
-    <h1><b>Superstar-Check in Thailand</b></h1>
-  </div>
-  
-  <div class="w3-row-padding w3-padding-16"></div>
+ <!-- Header -->
 
+<div class="waviy0">
+  <span style="--i:1">S</span>
+  <span style="--i:2">U</span>
+  <span style="--i:3">P</span>
+  <span style="--i:4">E</span>
+  <span style="--i:5">R</span>
+  <span style="--i:6">S</span>
+  <span style="--i:7">A</span>
+  <span style="--i:8">T</span>
+  <span style="--i:9">A</span>
+  <span style="--i:10">R</span>
+</div>
+<div class="waviy1">
+  <span style="--i:10">-</span>
+  <span style="--i:10">C</span>
+  <span style="--i:10">H</span>
+  <span style="--i:10">E</span>
+  <span style="--i:10">C</span>
+  <span style="--i:10">K</span>
+  <span style="--i:10"> </span>
+  <span style="--i:10">I</span>
+  <span style="--i:10">N</span>
+  <span style="--i:10"> </span>
+  <span style="--i:20">T</span>
+  <span style="--i:20">H</span>
+  <span style="--i:20">A</span>
+  <span style="--i:20">I</span>
+  <span style="--i:20">L</span>
+  <span style="--i:20">A</span>
+  <span style="--i:20">N</span>
+  <span style="--i:20">D</span>
+</div>
+  
+<div class="w3-row-padding w3-padding-20"></div>
   <div class="w3-third">
   <div class="w3-content w3-section">
   <img  src="imgHome/lisa.png">
@@ -149,6 +268,7 @@ h1 {
     </div>
   <main>
 <!-- Team Container -->
+<div class="w3-row-padding w3-padding-3"></div>
 <footer>
   <div class="w3-container w3-padding-64 w3-center" id="team">
     <h2>SUPERSTAR</h2>
@@ -158,27 +278,52 @@ h1 {
     <div class="w3-quarter">
       <a href="kp/kp1.html">
       <img src="/imgHome/lisa.png" alt="Boss" style="width:37%" class="w3-circle w3-hover-opacity">
-      <h3>Lisa Black-Pink</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="animate-charcter">Lisa Black-Pink</h3>
+          </div>
+        </div>
+      </div>
       <p>Artist:South Korea</p>
     </div>
     
+
     <div class="w3-quarter">
       <a href="kp/kp1.html">
-      <img src="/imgHome/ชาอึนอู.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-      <h3>Cha Eun-woo</h3>
+        <img src="/imgHome/ชาอึนอู.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="animate-charcter">Cha Eun-woo</h3>
+          </div>
+        </div>
+      </div>
       <p>Superstar:South Korea</p>
     </div>
     
     <div class="w3-quarter">
       <a href="kp/kp1.html">
-      <img src="/imgHome/แจ็ค1.jpg" alt="Boss" style="width:32%" class="w3-circle w3-hover-opacity">
-      <h3>Jackson Wang</h3>
+        <img src="/imgHome/แจ็ค1.jpg" alt="Boss" style="width:32%" class="w3-circle w3-hover-opacity">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="animate-charcter">Jackson Wang</h3>
+          </div>
+        </div>
+      </div>
       <p>Artist:China</p>
     </div>
+
     <div class="w3-quarter">
-      <a href="kp/kp1.html">
-      <img src="/imgHome/ดิว.jpg" alt="Boss" style="width:47%" class="w3-circle w3-hover-opacity">
-      <h3>Diw</h3>
+      <a href="kp/kp1.html"><img src="/imgHome/ดิว.jpg" alt="Boss" style="width:47%" class="w3-circle w3-hover-opacity">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="animate-charcter">Diw</h3>
+          </div>
+        </div>
+      </div>
       <p>Superstar:Thailand</p>
     </div>
     </div>
