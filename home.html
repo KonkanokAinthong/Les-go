@@ -74,9 +74,30 @@ box-sizing: border-box;
 h1 {
   font-size: 40px;
 }
-.button {
+
+.button1:hover {background-color: #ff7336}
+
+.button1:active {
+  background-color: #ff5f37;
+  box-shadow: 0 9px #666;
+  transform: translateY(4px);
+}
+.button2:hover {background-color: #ff7336}
+
+.button2:active {
+  background-color: #ff5f37;
+  box-shadow: 0 9px #666;
+  transform: translateY(4px);
+}
+.button3:hover {background-color: #ff7336}
+
+.button3:active {
+  background-color: #ff5f37;
+  box-shadow: 0 9px #666;
+  transform: translateY(4px);
+}
+.button1{
   display: inline-block;
-  padding: 10px 169px;
   font-size: 24px;
   cursor: pointer;
   text-align: center;	
@@ -87,14 +108,43 @@ h1 {
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
+  position: absolute; 
+  padding: 5px 100px;
+  left: 60px; 
+  top:710px;
+
 }
-
-.button:hover {background-color: #ff7336}
-
-.button:active {
-  background-color: #ff5f37;
-  box-shadow: 0 9px #666;
-  transform: translateY(4px);
+.button2{
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ff430f;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  position: absolute; 
+  padding: 5px 141px;
+  left: 680px; 
+}
+.button3{
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ff430f;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  position: absolute; 
+  padding: 5px 123px;
+  right: 190px; 
 }
 
 .animate-charcter
@@ -153,8 +203,8 @@ body {
   display: inline-block;
   color: #fff7f7;
  
-  animation: waviy0 1s infinite;
-  animation-delay: calc(.1s * var(--i));
+  animation: waviy0 2s infinite;
+  animation-delay: calc(.01s * var(--i));
   
 }
 @keyframes waviy0 {
@@ -165,21 +215,6 @@ body {
     transform: translateY(-20px)
   }
 }
-.waviy1 {
-  position: relative;
-  border: 0px solid;
-  top: 30px;
-  font-size: 20px;
-}
-.waviy1 span {
-  font-family: 'Alfa Slab One', cursive;
-  position: relative;
-  border: 0px solid;
-  top: 30px;
- 
-  color: #fff7f7;
-  
-}
 
 
 </style>
@@ -188,7 +223,7 @@ body {
 <header>
 <!-- Navigation Bar -->
 <p2 class="w3-bar w3-white w3-border-bottom w3-xlarge">
-  <a href="home.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>Logo</b></a>
+  <a href="home.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>Les'go</b></a>
 <!-- Load icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -213,37 +248,37 @@ body {
   <span style="--i:8">T</span>
   <span style="--i:9">A</span>
   <span style="--i:10">R</span>
-</div>
-<div class="waviy1">
-  <span style="--i:10">-</span>
-  <span style="--i:10">C</span>
-  <span style="--i:10">H</span>
-  <span style="--i:10">E</span>
-  <span style="--i:10">C</span>
-  <span style="--i:10">K</span>
-  <span style="--i:10"> </span>
-  <span style="--i:10">I</span>
-  <span style="--i:10">N</span>
-  <span style="--i:10"> </span>
-  <span style="--i:20">T</span>
-  <span style="--i:20">H</span>
-  <span style="--i:20">A</span>
-  <span style="--i:20">I</span>
-  <span style="--i:20">L</span>
-  <span style="--i:20">A</span>
-  <span style="--i:20">N</span>
-  <span style="--i:20">D</span>
+  <span style="--i:11">-</span>
+  <span style="--i:12">C</span>
+  <span style="--i:13">H</span>
+  <span style="--i:14">E</span>
+  <span style="--i:15">C</span>
+  <span style="--i:16">K</span>
+  <span style="--i:17">-</span>
+  <span style="--i:18">I</span>
+  <span style="--i:19">N</span>
+  <span style="--i:20"> </span>
+  <span style="--i:21">T</span>
+  <span style="--i:22">H</span>
+  <span style="--i:23">A</span>
+  <span style="--i:24">I</span>
+  <span style="--i:25">L</span>
+  <span style="--i:26">A</span>
+  <span style="--i:27">N</span>
+  <span style="--i:28">D</span>
 </div>
   
-<div class="w3-row-padding w3-padding-20"></div>
+<div class="w3-row-padding w3-padding-16"></div>
+
   <div class="w3-third">
-  <div class="w3-content w3-section">
-  <img  src="imgHome/lisa.png">
+    <div class="w3-content w3-section" >
+  <img src="imgHome/lisa.png">
  </div>
 <a href="les'go1.html">
   <div class="w3-third w3-margin-bottom"></div>
   <p1 class="w3-center"> 
-    <button class="button">South Korea</button></a>
+  <button class="button1">South Korea</button></a>
+ 
     </div>
     <div class="w3-third">
       <div class="w3-content w3-section" >
@@ -252,7 +287,7 @@ body {
       <a href="les'go3.html">
       <div class="w3-third w3-margin-bottom"></div>
       <p1 class="w3-center"> 
-        <button class="button">Chi Na</button></a>
+        <button class="button2">China</button></a>
     </div>
    
 
@@ -263,7 +298,7 @@ body {
         <a href="les'go3.html">
         <div class="w3-third w3-margin-bottom"></div>
         <p1 class="w3-center"> 
-          <button class="button">Thai Land</button></a>
+          <button class="button3">Thailand</button></a>
       </div>
     </div>
   <main>

@@ -1,7 +1,8 @@
 body{
    
-background-color: rgb(250, 180, 130);
 
+        background-image: linear-gradient(45deg, rgb(254, 151, 96) 5%, rgb(239, 164, 83) 100%);
+    
   
 }
 header {
