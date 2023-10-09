@@ -15,13 +15,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 p2{
+  font-family:Arial, sans-serif;
+  text-transform:none;
   position: absolute;  
   top: 0px;
   
 }
 p{
-  font-family: "Times New Roman", Times, serif;
+    font-family:Arial, sans-serif;
+    text-transform:none;
     color: white;
+    font-size: 17px;
 }
 header {
   background-color: rgb(253, 80, 6);
@@ -35,10 +39,12 @@ h1 {
 h3 {
   background: #efe9e7;
   color: white;
+  
 }
 h2 {
   background-color: rgb(248, 199, 170);
- font-family: "Times New Roman", Times, serif;
+  font-family:Arial, sans-serif;
+  text-transform:none;
   color: white;
 }
 *{
@@ -75,81 +81,10 @@ h1 {
   font-size: 40px;
 }
 
-.button1:hover {background-color: #ff7336}
-
-.button1:active {
-  background-color: #ff5f37;
-  box-shadow: 0 9px #666;
-  transform: translateY(4px);
-}
-.button2:hover {background-color: #ff7336}
-
-.button2:active {
-  background-color: #ff5f37;
-  box-shadow: 0 9px #666;
-  transform: translateY(4px);
-}
-.button3:hover {background-color: #ff7336}
-
-.button3:active {
-  background-color: #ff5f37;
-  box-shadow: 0 9px #666;
-  transform: translateY(4px);
-}
-.button1{
-  display: inline-block;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;	
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #ff430f;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  position: absolute; 
-  padding: 5px 100px;
-  left: 60px; 
-  top:710px;
-
-}
-.button2{
-  display: inline-block;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;	
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #ff430f;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  position: absolute; 
-  padding: 5px 141px;
-  left: 680px; 
-}
-.button3{
-  display: inline-block;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;	
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #ff430f;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  position: absolute; 
-  padding: 5px 123px;
-  right: 190px; 
-}
 
 .animate-charcter
 {
-   text-transform: uppercase;
+
   background-image: linear-gradient(
     -225deg,
     #efedf6 0%,
@@ -168,6 +103,8 @@ h1 {
   animation: textclip 2s linear infinite;
   display: inline-block;
       font-size: 30px;
+      font-family:Arial, sans-serif;
+      text-transform:none;
 }
 
 @keyframes textclip {
@@ -196,14 +133,14 @@ body {
   font-size: 40px;
 }
 .waviy0 span {
-  font-family: 'Alfa Slab One', cursive;
+  font-family:Arial, sans-serif;
   position: relative;
   border: 0px solid;
   top: 30px;
   display: inline-block;
   color: #fff7f7;
  
-  animation: waviy0 3s infinite;
+  animation: waviy0 2.5s infinite;
   animation-delay: calc(.1s * var(--i));
   
 }
@@ -215,46 +152,57 @@ body {
     transform: translateY(-20px)
   }
 }
-
-
-html, body {
-  height: 100%;
-}
-
 .wrap {
-  height: 100%;
+  height: 7%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.button {
+.button1,.button2,.button3{
   min-width: 350px;
   min-height: 60px;
-  font-family: 'Nunito', sans-serif;
-  font-size: 22px;
-  text-transform: uppercase;
+  font-family:Arial, sans-serif;
+  font-size: 30px;
+  text-transform:none;
   letter-spacing: 1.3px;
-  font-weight: 700;
+  font-weight: 500;
   color: #ededfb;
   background: #ff430f;
-  background: linear-gradient(90deg, rgb(249, 84, 7) 0%, rgb(254, 49, 22)00%);
+  background: linear-gradient(90deg, rgb(249, 112, 7) 0%,   rgb(239, 57, 7)100%);
   border: none;
   border-radius: 1000px;
-  box-shadow: 12px 12px 24px rgba(233, 90, 24, 0.64);
+  box-shadow: 12px 12px 24px rgba(144, 140, 143, 0.64);
   transition: all 0.3s ease-in-out 0s;
   cursor: pointer;
   outline: none;
-  position: relative;
-  padding: 10px;
+}
+.button1 {
+  
+  position: absolute; 
+  padding: 5px 90px;
+  left: 155px; 
+  top:735px;
+  }
+  .button2 {
+
+  position: absolute; 
+  padding: 5px 131px;
+  left: 740px; 
+  top:735px;
+  }
+  .button3 {
+  position: absolute; 
+  padding: 5px 113px;
+  right: 175px; 
+  top:735px;
   }
 
 button::before {
-content: '';
+  content: '';
   border-radius: 1000px;
-  min-width: calc(350px + 12px);
-  min-height: calc(60px + 12px);
-  border: 6px solid #ff4d00;
+  min-width: calc(370px + 15px);
+  min-height: calc(70px + 15px);
+  border: 6px solid #f9f1e8;
   box-shadow: 0 0 60px rgba(253, 208, 208, 0.64);
   position: absolute;
   top: 50%;
@@ -265,25 +213,12 @@ content: '';
 }
 
 .button:hover, .button:focus {
-  color: #313133;
+  color: #f3e5f4;
   transform: translateY(-6px);
 }
 
 button:hover::before, button:focus::before {
   opacity: 1;
-}
-
-button::after {
-  content: '';
-  width: 30px; height: 30px;
-  border-radius: 100%;
-  border: 6px solid #ff2600;
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: ring 1.5s infinite;
 }
 
 button:hover::after, button:focus::after {
@@ -303,7 +238,22 @@ button:hover::after, button:focus::after {
     opacity: 0;
   }
 }
-
+.picture1 {
+    position: relative;
+    top:30;
+    left: 105px;        
+}
+.picture2 {
+    position: relative;
+    top:30;
+    left:65px;
+    
+}
+.picture3 {
+    position: relative;
+    top:30;
+    left:30px;       
+}
 </style>
 </head>
 <body>
@@ -326,50 +276,49 @@ button:hover::after, button:focus::after {
 
 <div class="waviy0">
   <span style="--i:1">S</span>
-  <span style="--i:2">U</span>
-  <span style="--i:3">P</span>
-  <span style="--i:4">E</span>
-  <span style="--i:5">R</span>
-  <span style="--i:6">S</span>
-  <span style="--i:7">A</span>
-  <span style="--i:8">T</span>
-  <span style="--i:9">A</span>
-  <span style="--i:10">R</span>
-  <span style="--i:11">-</span>
-  <span style="--i:12">C</span>
-  <span style="--i:13">H</span>
-  <span style="--i:14">E</span>
-  <span style="--i:15">C</span>
-  <span style="--i:16">K</span>
-  <span style="--i:17">-</span>
-  <span style="--i:18">I</span>
-  <span style="--i:19">N</span>
-  <span style="--i:20"> </span>
-  <span style="--i:21">T</span>
-  <span style="--i:22">H</span>
-  <span style="--i:23">A</span>
-  <span style="--i:24">I</span>
-  <span style="--i:25">L</span>
-  <span style="--i:26">A</span>
-  <span style="--i:27">N</span>
-  <span style="--i:28">D</span>
+  <span style="--i:2">u</span>
+  <span style="--i:3">p</span>
+  <span style="--i:4">e</span>
+  <span style="--i:5">r</span>
+  <span style="--i:6">s</span>
+  <span style="--i:7">t</span>
+  <span style="--i:8">a</span>
+  <span style="--i:9">r</span>
+  <span style="--i:10"></span>
+  <span style="--i:11">C</span>
+  <span style="--i:12">h</span>
+  <span style="--i:13">e</span>
+  <span style="--i:14">c</span>
+  <span style="--i:15">k</span>
+  <span style="--i:15"></span>
+  <span style="--i:16">i</span>
+  <span style="--i:17">n</span>
+  <span style="--i:18"></span>
+  <span style="--i:19">T</span>
+  <span style="--i:20">h</span>
+  <span style="--i:21">a</span>
+  <span style="--i:22">i</span>
+  <span style="--i:23">l</span>
+  <span style="--i:24">a</span>
+  <span style="--i:25">n</span>
+  <span style="--i:26">d</span>
 </div>
   
 <div class="w3-row-padding w3-padding-16"></div>
 
   <div class="w3-third">
-    <div class="w3-content w3-section" >
+    <div class="picture1" >
   <img src="imgHome/lisa.png">
  </div>
 <a href="les'go1.html">
   <div class="w3-third w3-margin-bottom"></div>
     <div class="wrap">
-      <button class="button">Submit</button>
+      <button class="button1">South Korea</button>
     </div>
- 
-    </div>
+ </div>
+
     <div class="w3-third">
-      <div class="w3-content w3-section" >
+      <div class="picture2" >
         <img src="imgHome/หยางหยาง.jpg">
       </div>  
       <a href="les'go3.html">
@@ -377,10 +326,11 @@ button:hover::after, button:focus::after {
       <p1 class="w3-center"> 
         <button class="button2">China</button></a>
     </div>
+  </div>
    
 
       <div class="w3-third">
-        <div class="w3-content w3-section" >
+        <div class="picture3" >
           <img src="imgHome/วิน.jpg">
         </div>  
         <a href="les'go3.html">
@@ -394,9 +344,7 @@ button:hover::after, button:focus::after {
 <div class="w3-row-padding w3-padding-3"></div>
 <footer>
   <div class="w3-container w3-padding-64 w3-center" id="team">
-    <h2>SUPERSTAR</h2>
-    <p>Superstar Recommended:</p>
-    
+    <h2>Superstar Recommended</h2>
     <div class="w3-row"><br>
     <div class="w3-quarter">
       <a href="kp/kp1.html">
@@ -404,7 +352,7 @@ button:hover::after, button:focus::after {
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h3 class="animate-charcter">Lisa Black-Pink</h3>
+            <h3 class="animate-charcter">Lisa (BLACKPINK)</h3>
           </div>
         </div>
       </div>
